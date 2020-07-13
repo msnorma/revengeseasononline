@@ -1,0 +1,266 @@
+body {
+  font-family: 'Open Sans';
+}
+
+/* Typography */
+h6 {
+  font-weight: 600;
+}
+
+.display-4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+section {
+  margin: 50px 50px;
+}
+
+col {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #090909;
+}
+
+.nav-link {
+  color: #293039 !important;
+}
+
+.nav-link:hover {
+  color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+header .masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 7rem;
+}
+
+.header {
+  height: 1000px;
+  background-image: url("../img/revenge-header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Merch section & images */
+.item-title {
+  margin: 80px 0px 80px
+}
+
+.item-lable{
+  margin: 20px 0px 50px 0px;
+  display: grid;
+}
+
+.img-fluid {
+  width: 100%;
+}
+.img-fluid-front {
+  width: 100%;
+}
+.img-fluid-back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.image-overlay {
+  position: relative;
+  width: 50%;
+}
+.image-overlay:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+/* .img-fluid:hover {
+  filter: grayscale(0);
+  transform: scale(0.9);
+  box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+} */
+
+/* Events section */
+.events {
+  padding: 50px 0px 50px;
+}
+
+/* Contact section */
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-input {
+  margin-top: 30%;
+  display: inline-block;
+}
+
+.contact-input-form {
+  font-size: 10px;
+}
+
+.contact-frame {
+  max-width: 90%;
+  height: auto;
+}
+
+.order-info {
+  font-size: 11px;
+}
+
+.icons:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: black;
+}
+
+.fa:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.fa-facebook:hover {
+  color: #3B5998;
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+.fa-youtube-play:hover {
+  color: red;
+}
+
+/* Footer */
+.bg-footer {
+  background-color: #293039;
+}
+
+.connect {
+  color: #FFFFFF;
+}
+
+.center-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  width: 30px;
+  margin: 30px 15px;
+}
+/* Buttons */
+
+.btn-secondary{
+  font-size: 10px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 800px;
+    background-image: url("../img/revenge-header-mobile.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .item-title {
+    margin: 80px 0px 30px
+  }
+  .item-lable {
+    font-size: 11px;
+  }
+  .item-heading {
+    font-size: 11px;
+  }
+  .order-info {
+    font-size: 9px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  }
+  .img-fluid-hover{
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.0);
+  }
+  .img-fluid-hover:hover {
+    filter: blur(0);
+    transform: scale(0.9);
+  }
+}
